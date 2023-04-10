@@ -18,8 +18,6 @@ RUN rm /tmp/dovi_tool-1.5.6-x86_64-unknown-linux-musl.tar.gz
 
 COPY . .
 
-COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get upgrade -y
 RUN apt -qq update --fix-missing
 
